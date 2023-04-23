@@ -88,12 +88,21 @@
     margin-left: 80px;
   }
 
+  .header-list-item {
+    transition: transform 250ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+
   .header-list-link {
     font-weight: 400;
     font-size: 9px;
     line-height: 1.33;
     text-transform: uppercase;
     color: var(--color-white);
+  }
+
+  .header-list-item:hover,
+  .header-list-item:focus {
+    transform: scale(1.5);
   }
 
   .header-tel {
