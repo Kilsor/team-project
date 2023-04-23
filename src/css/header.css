@@ -104,10 +104,15 @@
     height: 48px;
     background-color: #1e2827;
     border-radius: 8px;
+    border: 1px solid transparent;
     font-weight: 400;
     font-size: 9px;
     line-height: 1.33;
     color: var(--color-white);
     margin-left: auto;
   }
-}
+
+  .header-tel:hover,
+  .header-tel:focus {
+    border-color: var(--color-white);
+  }
