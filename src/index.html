@@ -1,35 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Watch Spot</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/header.html" />
 
-    <main>
-      <load src="./partials/hero.html" />
-      <load src="./partials/about.html" />
-      <load src="./partials/catalog.html" />
-      <load src="./partials/new-watches.html" />
-      <load src="./partials/sale.html" />
-    </main>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Watch Spot</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
 
-    <load src="./partials/footer.html" />
+<body>
+  <load src="./partials/header.html" />
 
-    <load src="./partials/modal.html" />
-    <load src="./partials/mobile-menu.html" />
+  <main>
+    <load src="./partials/hero.html" />
+    <load src="./partials/about.html" />
+    <load src="./partials/catalog.html" />
+    <load src="./partials/new-watches.html" />
+    <load src="./partials/sale.html" />
+  </main>
 
-    <script type="module" src="/main.js"></script>
-  </body>
+  <load src="./partials/footer.html" />
+
+  <load src="./partials/modal.html" />
+  <load src="./partials/mobile-menu.html" />
+
+  <script type="module" src="/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  ,
+  <script>
+    const swiper = new Swiper('.myswiper', {
+      loop: true,
+
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+
+      keyboard: {
+        enabled: true,
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev ',
+      },
+
+    });
+  </script>
+</body>
+
 </html>
