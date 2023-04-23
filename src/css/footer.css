@@ -1,6 +1,13 @@
+footer{
+    background: #1E2827;
+    max-width: 1440px;
+}
+
 .container-footer{
     display: flex;
-    background-color: #1E2827;
+    
+    
+    
 }
 .container {
     overflow-x: hidden;
@@ -30,24 +37,24 @@
 
     
 }
-.social-container{
-    width: 148px;
-    height: 40px;
-    
-}
+
 @media screen and (max-width: 767px) {
     .contact-info{
         width: 141px;
-        height: 175px;
+        
     }
 }
 .navigation{
     display: block;
-    
+    width: fit-content;
+    height: fit-content;
 }
+    
+
 @media screen and (max-width: 767px) {
     .navigation{
         margin-left: auto;
+
     }
 }
 
@@ -139,10 +146,14 @@
       
     }
 }
-.address{
-    position: absolute;
+.addresss{
+    
     width: 141px;
     height: 54px;
+    
+}
+
+.maps{
     margin-top: 20px;
 }
 
@@ -157,7 +168,7 @@
 }
 
 @media screen and (min-width: 768px){
-    .icon-logo{
+    .logo-img{
         width: 50px;
         height: 50px;
     }
@@ -285,8 +296,8 @@
 @media screen and (min-width: 768px){
     .contact-info{
         margin-bottom: 152px;
-        height: 200px;
-        width: 175px;
+        
+        width: 181px
     }
     }
 
@@ -321,17 +332,23 @@
         padding-top: 104px;
         padding-bottom: 32px;
         flex-wrap: wrap;
-        width: 1440px;
         height: 534px;
+        
+        
+        
         }
 }
-
+@media screen and (min-width: 1440px){
+    .contact-info{
+        margin-left: 132px;
+    }
+}
+        
 @media screen and (min-width: 1280px){
 .contact-info{
     
     margin-bottom: 174px;
-    margin-left: 132px;
-
+    
 }
 }
 
@@ -344,10 +361,10 @@
 }
 
 
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1440px){
     .social-container{
         margin-right: 132px;
-        margin-left: 353px;
+        
         
         
    
