@@ -55,7 +55,6 @@
     border: 1px solid rgba(100%, 100%, 100%, 50%);
     background-color: transparent;
     color: rgba(100%, 100%, 100%, 50%);
-
 }
 
 .swiper-button-next:after,
@@ -81,6 +80,8 @@
 .swiper-pagination {
     position: absolute;
     text-align: center;
+    display: flex;
+
 }
 
 .swiper-horizontal>.swiper-pagination-bullets,
@@ -97,6 +98,49 @@
     letter-spacing: -0.02em;
     color: var(--color-white);
 }
+
+.swiper-pagination-current {
+    width: 48px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 24px;
+    background-color: var(--color-black);
+}
+
+.swiper-pagination-current::after {
+    content: '';
+    width: 32px;
+    height: 1px;
+    margin-left: 4px;
+    background-color: var(--color-white);
+    align-items: center;
+}
+
+.swiper-pagination-current::before {
+    content: '0';
+    margin-right: 1px;
+}
+
+.swiper-pagination-total {
+    display: none;
+    display: flex;
+    margin-left: 5px;
+    width: 20px;
+    background-color: var(--color-black);
+}
+
+.swiper-pagination-total::before {
+    content: '0';
+    width: 6px;
+    margin-right: 2px;
+    background-color: var(--color-black);
+}
+
+
+
+
 
 
 @media screen and (max-width: 767px) {
@@ -152,6 +196,14 @@
     .swiper-button-prev {
         width: 40px;
         height: 40px;
+    }
+
+    .swiper-pagination-current {
+        width: 56px;
+    }
+
+    .swiper-pagination-current::after {
+        width: 40px;
     }
 }
 
