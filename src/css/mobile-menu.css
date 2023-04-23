@@ -1,76 +1,77 @@
-@media screen and (min-width:768px) {
-    .mobile-meny {
-        display: none;
-    }
+@media screen and (min-width: 768px) {
+  .mobile-meny {
+    display: none;
+  }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
+  .mobile-meny {
+    position: fixed;
+    width: 100%;
+    height: 100%;
 
-    .mobile-meny {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        max-width: 375px;
-        z-index: 1000;
-        top: 0;
-        left: 50%;
-        transform: translateX(100%);
-        background-color: var(--color-dark-green);
-        overflow: hidden;
+    z-index: 21;
+    top: 0;
+    transform: translateX(0%);
+
+    background-color: var(--color-dark-green);
+    /* overflow: hidden;
         opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-        transition: transform 250ms linear, visibility 250ms linear, opacity 250ms linear;
-    }
+        visibility: hidden; */
+    /* pointer-events: none; */
+    transition: transform 250ms linear, visibility 250ms linear,
+      opacity 250ms linear;
+  }
 
-    .mobile-meny.is-open {
-        transform: translateX(-50%);
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-    }
+  .mobile-meny.is-hidden {
+    left: 50%;
+    transform: translateX(100%);
+    pointer-events: auto;
+  }
 
-    .container-mobile-meny {
-        max-width: 375px;
-        position: relative;
-        padding: 34px 20px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-        max-height: 369px;
-    }
+  .container-mobile-meny {
+    z-index: 2;
+    max-width: 375px;
+    position: relative;
+    padding: 34px 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    max-height: 369px;
+  }
 
-    .mobile-meny-close-btn {
-        position: absolute;
-        top: 30px;
-        right: 20px;
-        width: 24px;
-        height: 24px;
-        padding: 0;
-        background-color: transparent;
-        border: none;
-    }
+  .mobile-meny-close-btn {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
 
-    .mobil-meny-box {
-        display: flex;
-        justify-content: center;
-    }
+  .mobil-meny-box {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+  }
 
-    .mobil-meny-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 14px;
-    }
+  .mobil-meny-list {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 14px;
+  }
 
-    .mobile-meny-nav-link {
-        font-size: 14px;
-        line-height: 1.29;
-        letter-spacing: 0.02em;
-        color: var(--color-white);
-        text-transform: uppercase;
-    }
-
+  .mobile-meny-nav-link {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0.02em;
+    color: var(--color-white);
+    text-transform: uppercase;
+  }
 }
