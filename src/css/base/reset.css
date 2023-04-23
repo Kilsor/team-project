@@ -37,3 +37,7 @@ img {
 body {
   font-family: 'Epilogue', sans-serif;
 }
+
+address {
+  font-style: normal;
+}
