@@ -40,7 +40,7 @@
         width: 141px;
         
     }
-    .navigation{
+    .footer-navigation{
         margin-left: auto;
 
     }
@@ -68,7 +68,7 @@
 
 
 
-.navigation{
+.footer-navigation{
     display: block;
     width: fit-content;
     height: fit-content;
@@ -181,7 +181,7 @@
     margin-left: auto;
     
 }
-.navigation{
+.footer-navigation{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -284,7 +284,7 @@
             margin-bottom: 174px;
             
         }
-    .navigation{
+    .footer-navigation{
             margin-left: 355px;
              
         }
