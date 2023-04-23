@@ -338,11 +338,7 @@ footer{
         
         }
 }
-@media screen and (min-width: 1440px){
-    .contact-info{
-        margin-left: 132px;
-    }
-}
+
         
 @media screen and (min-width: 1280px){
 .contact-info{
@@ -361,26 +357,17 @@ footer{
 }
 
 
-@media screen and (min-width: 1440px){
-    .social-container{
-        margin-right: 132px;
-        
-        
-        
-   
-    
-    }
-}
+
 
 @media screen and (min-width: 1280px){
     .text-copy{
-        margin-left: 132px; 
+        margin-right: 132px; 
         margin-bottom: 32px;
     }
 }
 @media screen and (min-width: 1280px){
     .text-cop{
-        margin-right: 132px;  
+          
         margin-bottom: 32px;
     }
 }
