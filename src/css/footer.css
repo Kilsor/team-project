@@ -1,6 +1,5 @@
 .footer {
   background: var(--color-dark-green);
-  max-width: 1440px;
 }
 
 .container-footer {
@@ -30,7 +29,6 @@
   .contact-info {
     width: 141px;
   }
-
 
   .container-footer {
     padding-top: 40px;
@@ -134,7 +132,6 @@
   .text-contact {
     font-size: 18px;
     line-height: 1.33;
-    
   }
 
   .social-container {
@@ -144,7 +141,6 @@
   }
 
   .footer-navigation {
-  
     margin-left: 152px;
   }
 
@@ -154,7 +150,6 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    
   }
 
   .social-svg {
@@ -163,7 +158,6 @@
   }
 
   .social-item {
-    
     width: 44px;
     height: 44px;
   }
@@ -171,9 +165,6 @@
   .text-copyright {
     font-size: 14px;
     line-height: 18px;
-    
-    
-    
   }
 
   .contact-info {
@@ -203,7 +194,6 @@
   .container-footer {
     padding-top: 104px;
     padding-bottom: 32px;
-    
   }
 
   .contact-info {
@@ -211,7 +201,6 @@
   }
 
   .footer-navigation {
-    
     margin-left: 355px;
   }
 
