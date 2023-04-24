@@ -40,13 +40,15 @@
   text-transform: uppercase;
   min-width: 108px;
   padding: 14px 28px;
-  border: 0;
+  border: 1px solid var(--color-white);
   border-radius: 8px;
 }
 .catalog-btn:hover,
 .catalog-btn:focus {
-  border: 1px solid gray;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid green;
 }
+
 @media screen and (min-width: 768px) {
   .catalog-btn {
     min-width: 122px;
