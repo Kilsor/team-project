@@ -145,11 +145,8 @@
   }
 
   .text-footer {
-    font-family: 'Epilogue', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.33;
   }
 
   .social-svg {
