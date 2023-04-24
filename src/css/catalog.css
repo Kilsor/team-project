@@ -42,11 +42,11 @@
   padding: 14px 28px;
   border: 1px solid var(--color-white);
   border-radius: 8px;
+  transition: transform 250ms cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 .catalog-btn:hover,
 .catalog-btn:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 1px solid green;
+  transform: scale(1.2);
 }
 
 @media screen and (min-width: 768px) {
