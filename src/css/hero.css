@@ -1,6 +1,6 @@
 .hero {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 100%;
   background-color: var(--color-black);
 }
 
@@ -11,7 +11,6 @@
 
 .hero-title {
   margin-bottom: 60px;
-  font-style: normal;
   font-weight: 600;
   font-size: 38px;
   line-height: 1.05;
@@ -21,7 +20,6 @@
 
 .hero-text {
   margin-left: auto;
-  font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.29;
@@ -44,10 +42,6 @@
 .swiper-button-next,
 .swiper-button-prev {
   position: static;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 32px;
   height: 32px;
   margin-top: 0;
@@ -59,12 +53,7 @@
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-  font-family: swiper-icons;
   font-size: 16px;
-  text-transform: none !important;
-  letter-spacing: 0;
-  font-variant: initial;
-  line-height: 1;
 }
 
 .swiper-button-prev:active {
@@ -83,12 +72,12 @@
   display: flex;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   width: auto;
-  bottom: var(--swiper-pagination-bottom, 0px);
+  bottom: var(--swiper-pagination-bottom, 0);
   left: auto;
   right: 0;
   font-weight: 400;
@@ -112,9 +101,10 @@
   content: '';
   width: 32px;
   height: 1px;
+  align-items: center;
   margin-left: 4px;
   background-color: var(--color-white);
-  align-items: center;
+
 }
 
 .swiper-pagination-current::before {
@@ -123,7 +113,6 @@
 }
 
 .swiper-pagination-total {
-  display: none;
   display: flex;
   margin-left: 5px;
   width: 20px;
@@ -163,7 +152,6 @@
 
   .hero-title {
     width: 600px;
-    font-style: normal;
     font-weight: 600;
     font-size: 60px;
     line-height: 1.03;
@@ -201,8 +189,6 @@
 @media screen and (min-width: 1280px) {
   .hero-container {
     padding-bottom: 80px;
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .hero-title {
@@ -231,6 +217,7 @@
   .mysviper {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 0;
   }
 
   .swiper-button-prev:hover {
