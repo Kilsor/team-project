@@ -1,3 +1,81 @@
-<div>
-  <p>MODAL</p>
+<div class="backdrop is-hidde" data-modal>
+  <div class="modal">
+    <button class="modal-close" type="button" data-modal-close>
+      <svg class="close-icon">
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal-watch">
+      <picture class="image-watch">
+        <source
+          srcset="./img/catalog-1-1x.webp 1x, ./img/catalog-1-2x.webp 2x"
+          type="image/webp"
+        />
+        <source
+          srcset="./img/catalog-1-1x.jpg 1x, ./img/catalog-1-2x.jpg 2x"
+          type="image/jpg"
+        />
+        <img
+          class="image-watch"
+          src="./img/catalog-1-1x.jpg"
+          alt="Tube Watch S42 Date Steel With Black Case"
+          width="276"
+          height="274"
+        />
+      </picture>
+      <div class="modal-name-price">
+        <!-- delete div modal name price -->
+        <p class="modal-name">Tube Watch S42 Date Steel With Black Case...</p>
+        <span class="modal-price">€395</span>
+      </div>
+    </div>
+
+    <form
+      class="contact-form"
+      name="contact-form"
+      autocomplete="off"
+      novalidate
+    >
+      <label class="form-label" for="user-name">Full name</label>
+      <input
+        class="form-input"
+        type="text"
+        name="user-name"
+        id="user-name"
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        placeholder="Enter your full name"
+      />
+      <label class="form-label" for="user-email">Email</label>
+      <input
+        class="form-input"
+        type="email"
+        name="user-email"
+        id="user-email"
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        placeholder="Enter your email"
+      />
+      <label class="form-label" for="user-card-number">Card number</label>
+      <input
+        class="form-input"
+        type="text"
+        name="user-card-number"
+        id="user-card-number"
+        pattern="[0-9]"
+        placeholder="Enter card"
+      />
+      <label class="form-label" for="user-message">Comment</label>
+      <textarea
+        class="form-input form-input-textarea"
+        name="user-message"
+        id="user-message"
+        placeholder="Enter your text"
+      ></textarea>
+      <button class="submit-button" type="submit">submit</button>
+      <p class="modal-info">
+        By clicking on “Submit” button, you agree to our
+        <a class="link-privacy-policy" href="">Privacy Policy</a>, and allow
+        Promodo to use this information for marketing purposes.
+      </p>
+    </form>
+  </div>
 </div>
