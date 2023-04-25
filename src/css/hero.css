@@ -253,9 +253,11 @@
   line-height: 50px;
   font-size: 20px;
   color: var(--color-white);
+  border: 2px solid var(--color-white);
   text-decoration: none;
   opacity: 0.5;
   transition: opacity 0.3s ease-in-out;
+  z-index: 10;
 }
 
 .scroll-to-top:hover {
