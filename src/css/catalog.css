@@ -191,8 +191,12 @@
   max-width: 236px;
 }
 
+.catalog-grid-item {
+  position: relative;
+}
+
 .favorite-button {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
   z-index: 3;
