@@ -178,7 +178,8 @@
   transform-origin: left;
   transform: perspective(2000px) rotateY(-90deg);
 }
-.card:hover .flip {
+.card:hover .flip,
+.card:focus .flip {
   transform: perspective(2000px) rotateY(0deg);
 }
 .overlay .flip .description {
@@ -207,6 +208,12 @@
 .favorite-icon {
   opacity: 0.2;
   fill: var(--color-dark-green);
+  transition: transform 250ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.favorite-icon:hover,
+.favorite-icon:focus {
+  transform: scale(1.5);
 }
 
 .favorite-icon.active {
