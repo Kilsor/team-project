@@ -197,8 +197,8 @@
 
 .favorite-button {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 3px;
+  right: 8px;
   z-index: 3;
   border: none;
   background-color: transparent;
