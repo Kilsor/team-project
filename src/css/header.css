@@ -13,18 +13,15 @@
   height: 24px;
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
 .header-logo-img {
   width: 14px;
   height: 14px;
 }
 
-.company-name {
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1;
@@ -77,7 +74,7 @@
     height: 19px;
   }
 
-  .company-name {
+  .header-logo {
     font-size: 15px;
   }
 
@@ -88,7 +85,8 @@
     margin-left: 80px;
   }
 
-    .header-list-link {
+  .header-list-link {
+    padding: 4px;
     display: block;
     align-items: center;
     font-weight: 400;
@@ -99,12 +97,12 @@
     transition: transform 250ms cubic-bezier(0.39, 0.575, 0.565, 1);
   }
 
-.header-list-link:hover,
+  .header-list-link:hover,
   .header-list-link:focus {
     transform: scale(1.5);
   }
 
-    .header-tel {
+  .header-tel {
     display: flex;
     justify-content: center;
     align-items: center;
