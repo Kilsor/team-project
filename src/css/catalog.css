@@ -95,11 +95,12 @@
   background-color: #1e2827;
   border: 1px solid #141414;
   border-radius: 8px;
-  max-width: 210px;
+  max-width: 240px;
 }
 @media screen and (min-width: 1280px) {
   .flip {
     padding: 20px;
+    max-width: 210px;
   }
 }
 
