@@ -178,21 +178,25 @@
   transform-origin: left;
   transform: perspective(2000px) rotateY(-90deg);
 }
-.overlay:hover .flip {
+.card:hover .flip {
   transform: perspective(2000px) rotateY(0deg);
 }
-.overlay .flip .card {
+.overlay .flip .description {
   background: #1e2827;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
-.card {
+.description {
   max-width: 236px;
 }
 
+.catalog-grid-item {
+  position: relative;
+}
+
 .favorite-button {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
   z-index: 3;
@@ -208,4 +212,17 @@
 .favorite-icon.active {
   fill: var(--color-green);
   opacity: 1;
+}
+
+.card {
+  outline: transparent;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card:hover,
+.card:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
