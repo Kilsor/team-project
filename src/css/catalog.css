@@ -190,3 +190,22 @@
 .card {
   max-width: 236px;
 }
+
+.favorite-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+  border: none;
+  background-color: transparent;
+}
+
+.favorite-icon {
+  opacity: 0.2;
+  fill: var(--color-dark-green);
+}
+
+.favorite-icon.active {
+  fill: var(--color-green);
+  opacity: 1;
+}
