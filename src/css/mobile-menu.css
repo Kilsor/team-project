@@ -51,6 +51,7 @@
     padding: 0;
     background-color: transparent;
     border: none;
+    stroke: var(--color-white);
   }
 
   .mobil-meny-box {
