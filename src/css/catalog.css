@@ -153,6 +153,9 @@
   .overlay {
     transform: translate(-50%, 0%);
   }
+  .catalog-grid-item {
+    padding-bottom: 40px;
+  }
 }
 .overlay .img-box {
   width: 100%;
